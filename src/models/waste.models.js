@@ -13,6 +13,4 @@ const addWaste = async (wasteData) => {
     return waste
 }
 
-module.exports = {
-    addWaste,
-}
+module.exports = addWaste

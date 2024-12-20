@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "5b882ad7-3ff2-4e41-af09-a87de03c7068",
+		"name": "WasteApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31597574"
+	},
+	"item": [
+		{
+			"name": "Predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/E:/Media/Downloads/1rgjsx41le3iw8p.jpeg"
+						}
+					]
+				},
+				"url": "http://localhost:5000/predict"
+			},
+			"response": []
+		}
+	]
+}
