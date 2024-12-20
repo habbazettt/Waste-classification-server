@@ -31,13 +31,11 @@ const postPredictData = async (req, res) => {
         }
 
         const { confidenceScore, result, explanation } = await predictedClassification(image, model);
-        console.log('Confidence Score:', confidenceScore);
-        console.log('Result:', result);
-        console.log('Explanation:', explanation);
 
         const wasteData = {
             result,
-            explanation
+            explanation,
+            confidenceScore
         }
 
         let waste;

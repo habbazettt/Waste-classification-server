@@ -5,11 +5,14 @@ const addWaste = async (wasteData) => {
     const waste = await prisma.Waste.create({
         data: {
             result: wasteData.result,
-            explanation: wasteData.explanation
+            explanation: wasteData.explanation,
+            confidence: wasteData.confidenceScore
         }
     })
 
     return waste
 }
 
-module.exports = addWaste
+module.exports = {
+    addWaste,
+}
